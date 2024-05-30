@@ -2,7 +2,7 @@ import type { HomeModuleAlbumType } from "./album";
 import type {
   HomeModuleMiniType,
   HomeModuleQuality,
-  HomeModuleType,
+  HomeModuleItemType,
 } from "./misc";
 import type { HomeModulePlaylistType } from "./playlist";
 import type { HomeModuleSongType } from "./song";
@@ -28,7 +28,7 @@ export interface HomeModuleCityModType {
   url: string;
   subtitle: string;
   name: string;
-  type: HomeModuleType;
+  type: HomeModuleItemType;
   album_id?: string;
   featured_station_type?: string;
   query?: string;
@@ -44,7 +44,7 @@ export interface HomeModuleDiscoverType {
   type: "channel";
   badge: string;
   is_featured: boolean;
-  sub_type: HomeModuleType;
+  sub_type: HomeModuleItemType;
   tags: Record<string, string[]>;
   video_thumbnail: string;
   video_url: string;
@@ -57,12 +57,12 @@ export interface HomeModuleTagMixType {
   url: string;
   subtitle: string;
   name: string;
-  type: HomeModuleType;
+  type: HomeModuleItemType;
   first_name: string;
   language: string;
   last_name: string;
   list_count: number;
-  list_type: HomeModuleType;
+  list_type: HomeModuleItemType;
   list: string;
   play_count: number;
   year: number;
@@ -78,7 +78,7 @@ export interface HomeModuleRadioType {
   explicit: boolean;
   color?: string;
   description?: string;
-  featured_station_type: HomeModuleType;
+  featured_station_type: HomeModuleItemType;
   language: string;
   query?: string;
   station_display_text: string;

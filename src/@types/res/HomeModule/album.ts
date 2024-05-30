@@ -1,5 +1,9 @@
 import type { HomeModuleSongType } from "./song";
-import type { HomeModuleMiniType, HomeModuleQuality, HomeModuleType } from "./misc";
+import type {
+  HomeModuleMiniType,
+  HomeModuleQuality,
+  HomeModuleItemType,
+} from "./misc";
 import type { HomeModuleArtistMapType } from "./artist";
 
 export interface HomeAlbumModulesType {
@@ -46,7 +50,7 @@ export interface HomeModuleAlbumType {
   duration: number;
   year: number;
   list_count: number;
-  list_type: HomeModuleType;
+  list_type: HomeModuleItemType;
   artist_map?: HomeModuleArtistMapType;
   song_count?: number;
   label_url?: string;

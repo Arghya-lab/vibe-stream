@@ -1,4 +1,4 @@
-import type { HomeModuleQuality, HomeModuleType } from "./misc";
+import type { HomeModuleQuality, HomeModuleItemType } from "./misc";
 
 export interface HomeModuleArtistMiniType {
   id: string;
@@ -16,8 +16,8 @@ export interface HomeModuleArtistRecoType {
   url: string;
   subtitle: string;
   name: string;
-  type: HomeModuleType;
-  featured_station_type: HomeModuleType;
+  type: HomeModuleItemType;
+  featured_station_type: HomeModuleItemType;
   query: string;
   station_display_text: string;
 }

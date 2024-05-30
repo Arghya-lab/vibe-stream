@@ -10,7 +10,7 @@ export const fetchPlaylist = async (params: {
 }) => {
   const { data }: { data: fetchPlaylistResponseType } = await ApiInstance.get(
     "/playlists",
-    { params }
+    { params },
   );
   return data;
 };

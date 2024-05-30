@@ -18,7 +18,7 @@ export const fetchArtist = async (params: {
 }) => {
   const { data }: { data: fetchArtistResponseType } = await ApiInstance.get(
     "/artists",
-    { params }
+    { params },
   );
   return data;
 };
@@ -30,7 +30,7 @@ export const fetchArtistSongs = async (
     page?: number;
     sortBy?: ShortByEnum;
     sortOrder?: ShortOrderEnum;
-  }
+  },
 ) => {
   const { data }: { data: fetchArtistSongsResponseType } =
     await ApiInstance.get(`/artists/${id}/songs`, { params });
@@ -44,7 +44,7 @@ export const fetchArtistAlbums = async (
     page?: number;
     sortBy?: ShortByEnum;
     sortOrder?: ShortOrderEnum;
-  }
+  },
 ) => {
   const { data }: { data: fetchArtistAlbumsResponseType } =
     await ApiInstance.get(`/artists/${id}/albums`, { params });

@@ -1,5 +1,4 @@
-import type { HomeModuleType } from "./HomeModule/misc";
-import type { HomeModulesMiniType } from "./HomeModule/module";
+import type { HomeModuleType, HomeModulesMiniType } from "./HomeModule/module";
 import type { IAlbum, IArtistAlbums } from "./album";
 import type { IArtist } from "./artist";
 import type { ISongLyricsType } from "./misc";

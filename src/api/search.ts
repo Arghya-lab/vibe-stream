@@ -11,7 +11,7 @@ import type {
 export const doGlobalSearch = async (params: { query: string }) => {
   const { data }: { data: GlobalSearchResponseType } = await ApiInstance.get(
     "/search",
-    { params }
+    { params },
   );
   return data;
 };
@@ -24,7 +24,7 @@ export const doSearchSongs = async (params: {
 }) => {
   const { data }: { data: SearchSongsResponseType } = await ApiInstance.get(
     "/search/songs",
-    { params }
+    { params },
   );
   return data;
 };
@@ -37,7 +37,7 @@ export const doSearchAlbums = async (params: {
 }) => {
   const { data }: { data: SearchAlbumsResponseType } = await ApiInstance.get(
     "/search/albums",
-    { params }
+    { params },
   );
   return data;
 };
@@ -50,7 +50,7 @@ export const doSearchArtists = async (params: {
 }) => {
   const { data }: { data: SearchArtistsResponseType } = await ApiInstance.get(
     "/search/artists",
-    { params }
+    { params },
   );
   return data;
 };
@@ -63,7 +63,7 @@ export const doSearchPlaylists = async (params: {
 }) => {
   const { data }: { data: SearchPlaylistsResponseType } = await ApiInstance.get(
     "/search/playlists",
-    { params }
+    { params },
   );
   return data;
 };

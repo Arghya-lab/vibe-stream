@@ -1,14 +1,13 @@
 <script lang="ts">
   import { Route, Router } from "svelte-routing";
-  import Home from "./routes/Home.route.svelte";
-  import NotFound from "./routes/NotFound.route.svelte";
-  import { getPlaylists } from "./api";
+  import Home from "./pages/Home.svelte";
+  import NotFound from "./pages/NotFound.svelte";
+  import Navbar from "./components/milkyWay/Navbar.svelte";
 
   export let url = "";
-
-  console.log(getPlaylists());
 </script>
 
+<Navbar />
 <Router {url}>
   <Route path="/" component={Home} />
   <Route path="/*" component={NotFound} />

@@ -9,7 +9,7 @@ import type {
 export const fetchSongs = async (params: { ids?: string[]; link?: string }) => {
   const { data }: { data: FetchSongsResponseType } = await ApiInstance.get(
     "/songs",
-    { params: params?.ids ? { ids: params.ids.join(",") } : params }
+    { params: params?.ids ? { ids: params.ids.join(",") } : params },
   );
   return data;
 };
@@ -24,7 +24,7 @@ export const fetchSong = async ({
 }) => {
   const { data }: { data: FetchSongsResponseType } = await ApiInstance.get(
     `/songs/${id}`,
-    { params: { lyrics } }
+    { params: { lyrics } },
   );
   return data;
 };
@@ -32,7 +32,7 @@ export const fetchSong = async ({
 /* Retrieve the lyrics for a song by its ID. */
 export const fetchSongLyrics = async (params: { id: string }) => {
   const { data }: { data: FetchSongLyricsResponseType } = await ApiInstance.get(
-    `/songs/${params.id}/lyrics`
+    `/songs/${params.id}/lyrics`,
   );
   return data;
 };

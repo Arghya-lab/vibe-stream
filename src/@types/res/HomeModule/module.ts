@@ -60,3 +60,20 @@ export interface HomeModulesMiniType {
   trending: HomeModule<HomeModuleMiniType>;
   global_config: GlobalConfig;
 }
+
+export type HomeModuleValueType = (
+  | HomeModule<
+      | HomeModuleAlbumType
+      | HomeModuleSongType
+      | HomeModuleArtistRecoType
+      | HomeModuleChartType
+      | HomeModuleCityModType
+      | HomeModuleDiscoverType
+      | HomeModuleTagMixType
+      | HomeModulePlaylistType
+      | HomeModuleRadioType
+      | HomeModuleTrendingType[0]
+    >
+  | HomeModule<HomeModuleMiniType>
+)[];
+// | GlobalConfig

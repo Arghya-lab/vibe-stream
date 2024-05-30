@@ -1,6 +1,7 @@
+import type { ImageQualityEnum } from "../misc";
 import type { HomeModuleArtistMapType } from "./artist";
 
-export type HomeModuleType =
+export type HomeModuleItemType =
   | "artist"
   | "album"
   | "playlist"
@@ -14,7 +15,7 @@ export type HomeModuleType =
   | "season"
   | "label";
 
-export type HomeModuleQuality = string | { quality: string; link: string }[];
+export type HomeModuleQuality = string | { quality: ImageQualityEnum; link: string }[];
 
 export interface HomeModuleRights {
   code: unknown;
@@ -28,7 +29,7 @@ export interface HomeModuleMiniType {
   name: string;
   subtitle?: string;
   header_desc?: string;
-  type: HomeModuleType;
+  type: HomeModuleItemType;
   url: string;
   image: HomeModuleQuality;
   color?: string;
