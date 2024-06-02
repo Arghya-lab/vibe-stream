@@ -15,7 +15,9 @@ export type HomeModuleItemType =
   | "season"
   | "label";
 
-export type HomeModuleQuality = string | { quality: ImageQualityEnum; link: string }[];
+export type HomeModuleQuality =
+  | string
+  | { quality: ImageQualityEnum; link: string }[];
 
 export interface HomeModuleRights {
   code: unknown;

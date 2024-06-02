@@ -23,7 +23,7 @@
 
 <div
   class={cx(
-    "flex w-16 aspect-square items-center justify-center rounded-full bg-neutral-100",
+    "flex w-16 aspect-square items-center justify-center rounded-lg bg-neutral-100",
     className,
   )}
 >

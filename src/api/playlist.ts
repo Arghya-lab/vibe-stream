@@ -12,5 +12,5 @@ export const fetchPlaylist = async (params: {
     "/playlists",
     { params },
   );
-  return data;
+  return data.data;
 };

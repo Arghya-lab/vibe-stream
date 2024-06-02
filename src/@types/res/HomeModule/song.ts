@@ -1,12 +1,16 @@
 import type { HomeModuleArtistMapType } from "./artist";
-import type { HomeModuleQuality, HomeModuleRights } from "./misc";
+import type {
+  HomeModuleItemType,
+  HomeModuleQuality,
+  HomeModuleRights,
+} from "./misc";
 
 export interface HomeModuleSongType {
   id: string;
   name: string;
   subtitle: string;
   header_desc: string;
-  type: "song";
+  type: HomeModuleItemType;
   url: string;
   image: HomeModuleQuality;
   language: string;

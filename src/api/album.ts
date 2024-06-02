@@ -9,5 +9,5 @@ export const fetchAlbum = async (params: { id?: string; link?: string }) => {
       params: params?.id ? { id: params.id } : params,
     },
   );
-  return data;
+  return data.data;
 };

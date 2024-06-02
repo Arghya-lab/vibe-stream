@@ -1,5 +1,9 @@
 import type { HomeModuleArtistMiniType } from "./artist";
-import type { HomeModuleMiniType, HomeModuleQuality } from "./misc";
+import type {
+  HomeModuleItemType,
+  HomeModuleMiniType,
+  HomeModuleQuality,
+} from "./misc";
 import type { HomeModuleSongType } from "./song";
 
 export interface HomePlaylistModulesType {
@@ -30,7 +34,7 @@ export interface HomeModulePlaylistType {
   name: string;
   subtitle: string;
   header_desc?: string;
-  type: "playlist";
+  type: HomeModuleItemType;
   url: string;
   image: HomeModuleQuality;
   language: string;

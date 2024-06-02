@@ -43,7 +43,7 @@ export interface HomeModuleAlbumType {
   url: string;
   subtitle: string;
   name: string;
-  type: "album";
+  type: HomeModuleItemType;
   header_desc: string;
   language: string;
   play_count: number;

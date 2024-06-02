@@ -8,24 +8,14 @@
   import { X } from "lucide-svelte";
 
   const {
-    elements: {
-      trigger,
-      overlay,
-      content,
-      title,
-      description,
-      close,
-      portalled,
-    },
+    elements: { trigger, overlay, content, close, portalled },
     states: { open },
   } = createDialog({
     forceVisible: true,
   });
 </script>
 
-<nav
-  class="px-2 sm:px-4 py-2.5 w-full fixed top-0 left-0 right-0 bg-background border-b-2"
->
+<nav class="px-2 sm:px-4 py-2.5 w-full h-[76px] bg-background border-b-2">
   <div
     class="mx-auto flex flex-wrap justify-between items-center w-full px-2 sm:px-8"
   >

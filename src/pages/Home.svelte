@@ -25,14 +25,13 @@
   });
 </script>
 
-<main>
-  {#if isLoading}
-    loading
-  {:else if error}
-    Error fetching home HomeModuleSongType
-  {:else if !!moduleData}
-    {#each moduleData as data}
-      <GeneralModuleBanner {data} />
-    {/each}
-  {/if}
-</main>
+{#if isLoading}
+  loading
+{:else if error}
+  Error fetching home HomeModuleSongType
+{:else if moduleData}
+  {console.log(moduleData)}
+  {#each moduleData as data}
+    <GeneralModuleBanner {data} />
+  {/each}
+{/if}

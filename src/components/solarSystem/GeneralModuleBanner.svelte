@@ -18,20 +18,19 @@
   >;
 </script>
 
-<section>
+<section class="px-4">
   <div class="mt-6 flex justify-between items-center">
     <TypographyH5>{data.title}</TypographyH5>
     <TypographyMuted2>Show More</TypographyMuted2>
   </div>
   <div
-    class="grid grid-cols-2 xs:grid-cols-3 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-7"
+    class="-mx-3 grid grid-cols-2 xs:grid-cols-3 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-7"
   >
-    {#each data.data.slice(0, 5) as itemData}
-      <GeneralModuleItem
-        imgUrls={itemData.image}
-        title={itemData.name}
-        subtitle={itemData.subtitle}
-      />
+    {#each data.data as itemData}
+      <GeneralModuleItem data={itemData} />
     {/each}
+    <!-- {#each data.data.slice(0, 5) as itemData}
+      <GeneralModuleItem data={itemData} />
+    {/each} -->
   </div>
 </section>

@@ -26,7 +26,7 @@ export const fetchSong = async ({
     `/songs/${id}`,
     { params: { lyrics } },
   );
-  return data;
+  return data.data;
 };
 
 /* Retrieve the lyrics for a song by its ID. */
